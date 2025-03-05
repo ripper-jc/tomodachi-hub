@@ -6,7 +6,7 @@ const nextConfig: NextConfig = {
     domains: [
       "tomodachi.mooo.com",
       "tomodachi.synology.me",
-      "imgsrv.crunchyroll.com",
+      "imgsrv.crunchyroll.com"
     ],
     remotePatterns: [
       {
@@ -28,13 +28,13 @@ const nextConfig: NextConfig = {
         protocol: "https",
         hostname: "imgsrv.crunchyroll.com",
         pathname: "/cdn-cgi/image/**",
-      },
+      }
     ],
     //unoptimized: true // Add this to disable image optimization if needed
   },
   eslint: {
-    ignoreDuringBuilds: true, // Add this to disable eslint during builds
-  },
+    ignoreDuringBuilds: true,// Add this to disable eslint during builds
+  }
 };
 
 export default nextConfig;
